@@ -33,7 +33,7 @@ class Review(models.Model):
     watchlist = models.ForeignKey(Watchlist, on_delete = models.CASCADE, related_name = "reviews")
     created = models.DateTimeField(auto_now_add = True)
     update = models.DateTimeField(auto_now=True)
-    avtive = models.BooleanField(default= True)
+    active = models.BooleanField(default= True)
     
     
     def __str__(self):
